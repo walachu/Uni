@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNI EARFIM - Asistencia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo-container">
+            <a href="index.html"><img src="imagenes/uni-logo.png" alt="UNI EARFIM Logo" class="logo" width="50" height="auto"></a>
+            <div class="logo-text-container">
+                <span class="logo-text">UNI EARPFIM</span>
+                <span class="practicante">DOCENTE</span>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#" onclick="toggleSubMenu()" class="menu-button">
+                <img src="imagenes/maleta.jpg" alt="Briefcase" class="menu-icon">
+                General
+            </a>
+            <div class="submenu" id="submenu">
+                <a href="horario.html">Horario</a>
+                <a href="asistencia.html">Asistencia</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="header">
+            <span class="menu-icon" onclick="toggleSidebar()">≡</span>
+            <span class="user-name">PIMENTEL MONTALVO, GUSTAVO</span>
+            <span class="options-icon" onclick="toggleOptions()">⋮</span>
+            <div class="dropdown" id="dropdown">
+                <a href="#">Mi Información</a>
+                <a href="#">Reiniciar Clave</a>
+                <a href="#">Cerrar Sesión</a>
+            </div>
+        </div>
+
+        <div class="attendance" id="asistencia">
+            <h2>Asistencia</h2>
+            <div class="attendance-header">
+                <div class="date-picker">
+                    <input type="date" id="attendance-date" name="attendance-date">
+                </div>
+                <div class="attendance-buttons">
+                    <button class="btn btn-primary">Registrar entrada y salida de clase</button>
+                    <button class="btn btn-secondary">Anular</button>
+                    <button class="btn btn-info">Ver detalle recuperación / justificación</button>
+                </div>
+                <div class="attendance-filters">
+                    <button class="btn btn-filter">F. Pasadas</button>
+                    <button class="btn btn-filter">F. Presentes</button>
+                    <button class="btn btn-filter">F. Futuras</button>
+                    <button class="btn btn-filter active">Ver todo</button>
+                </div>
+            </div>
+            <table class="attendance-table">
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Curso</th>
+                        <th>Horario</th>
+                        <th>Marcación</th>
+                        <th>Est</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Viernes 12</td>
+                        <td>MC510-C (TEO)</td>
+                        <td>08-11</td>
+                        <td>08:00 - 11:24</td>
+                        <td><span class="status-green">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Viernes 12</td>
+                        <td>BIC011-F (TEO)</td>
+                        <td>08-10</td>
+                        <td>08:04 - 09:50</td>
+                        <td><span class="status-green">✓</span></td>
+                    </tr>
+                    <!-- Agrega más filas según sea necesario -->
+                </tbody>
+            </table>
+            <div class="attendance-summary">
+                <h3>Resumen de Asistencia Mensual</h3>
+                <div class="summary-boxes">
+                    <div class="summary-box">P</div>
+                    <div class="summary-box">T</div>
+                    <div class="summary-box">F</div>
+                    <div class="summary-box">S</div>
+                </div>
+            </div>
+            <div class="attendance-summary">
+                <h3>Resumen de Asistencia del semestre</h3>
+                <div class="summary-boxes">
+                    <div class="summary-box">P</div>
+                    <div class="summary-box">T</div>
+                    <div class="summary-box">F</div>
+                    <div class="summary-box">S</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

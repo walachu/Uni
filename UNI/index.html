@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNI EARFIM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo-container">
+            <img src="imagenes/uni-logo.png" alt="UNI EARFIM Logo" class="logo" width="50" height="auto">
+            <div class="logo-text-container">
+                <span class="logo-text">UNI EARPFIM</span>
+                <span class="practicante">DOCENTE</span>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#" onclick="toggleSubMenu()" class="menu-button">
+                <img src="imagenes/maleta.jpg" alt="Briefcase" class="menu-icon">
+                General
+            </a>
+            <div class="submenu" id="submenu">
+                <a href="horario.html">Horario</a>
+                <a href="asistencia.html">Asistencia</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="header">
+            <span class="menu-icon" onclick="toggleSidebar()">≡</span>
+            <span class="user-name">PIMENTEL MONTALVO, GUSTAVO</span>
+            <span class="options-icon" onclick="toggleOptions()">⋮</span>
+            <div class="dropdown" id="dropdown">
+                <a href="mi_informacion.html">Mi Información</a>
+                <a href="#">Reiniciar Clave</a>
+                <a href="#">Cerrar Sesión</a>
+            </div>
+        </div>
+
+        <div class="welcome">
+            <h1>BIENVENIDO AL EARPFIM</h1>
+            <p>ZONA USUARIO</p>
+            <img src="imagenes/tuerca.gif" alt="Gears" class="gears">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

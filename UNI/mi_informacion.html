@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNI EARFIM - Mi Información</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo-container">
+            <a href="index.html"><img src="imagenes/uni-logo.png" alt="UNI EARFIM Logo" class="logo" width="50" height="auto"></a>
+            <div class="logo-text-container">
+                <span class="logo-text">UNI EARPFIM</span>
+                <span class="practicante">DOCENTE</span>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#" onclick="toggleSubMenu()" class="menu-button">
+                <img src="imagenes/maleta.jpg" alt="Briefcase" class="menu-icon">
+                General
+            </a>
+            <div class="submenu" id="submenu">
+                <a href="horario.html">Horario</a>
+                <a href="asistencia.html">Asistencia</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="header">
+            <span class="menu-icon" onclick="toggleSidebar()">≡</span>
+            <span class="user-name">PIMENTEL MONTALVO, GUSTAVO</span>
+            <span class="options-icon" onclick="toggleOptions()">⋮</span>
+            <div class="dropdown" id="dropdown">
+                <a href="#">Mi Información</a>
+                <a href="#">Reiniciar Clave</a>
+                <a href="#">Cerrar Sesión</a>
+            </div>
+        </div>
+
+        <div class="info-container">
+            <div class="info-header">
+                <img src="ruta_de_la_imagen/foto_perfil.jpg" alt="Foto de perfil">
+                <h1>PIMENTEL MONTALVO GUSTAVO</h1>
+            </div>
+            
+            <div class="info-buttons">
+                <button>Actualizar</button>
+                <button>Historial</button>
+            </div>
+
+            <div class="info-section">
+                <h2>1.- DATOS PERSONALES</h2>
+                
+                <div class="info-row">
+                    <div class="info-label">Sexo</div>
+                    <div class="info-value">
+                        <select>
+                            <option>Masculino</option>
+                        </select>
+                    </div>
+                    <div class="info-label">Fecha Nacimiento</div>
+                    <div class="info-value">
+                        <input type="date" value="1975-02-16">
+                    </div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">DNI</div>
+                    <div class="info-value">08101078</div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Teléfono Fijo</div>
+                    <div class="info-value">5314292 | 5456454 | 5310039 |</div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Celular</div>
+                    <div class="info-value">961629294 | 999652562 |</div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">RUC</div>
+                    <div class="info-value">Lib Militar</div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Brevete y Categoría</div>
+                    <div class="info-value">Si cuenta con vehículo, indicar modelo, placa, año, color</div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Estado Civil</div>
+                    <div class="info-value">
+                        <select>
+                            <option>Seleccionar</option>
+                        </select>
+                    </div>
+                    <div class="info-label">Fecha Matrimonio</div>
+                    <div class="info-value">
+                        <input type="date" value="2005-04-01">
+                    </div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">E-mail</div>
+                    <div class="info-value">maximo@uni.ed maxobregon@gmail</div>
+                </div>
+
+                <h3>Lugar de Nacimiento</h3>
+                <div class="info-row">
+                    <div class="info-label">País</div>
+                    <div class="info-value">
+                        <select>
+                            <option>Perú</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Departamento</div>
+                    <div class="info-value">
+                        <select>
+                            <option>15 Lima</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Provincia</div>
+                    <div class="info-value">
+                        <select>
+                            <option>01 Lima</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Distrito</div>
+                    <div class="info-value">
+                        <select>
+                            <option>35 San Martín de Porres</option>
+                        </select>
+                    </div>
+                </div>
+
+                <h3>Domicilio</h3>
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>Orden</th>
+                            <th>País</th>
+                            <th>Dirección extranjera</th>
+                            <th>Departamento</th>
+                            <th>Provincia</th>
+                            <th>Distrito</th>
+                            <th>Tipo de Vía</th>
+                            <th>Nombre de la Vía</th>
+                            <th>Tipo</th>
+                            <th>Número de Inmueble</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Perú</td>
+                            <td></td>
+                            <td>15 Lima</td>
+                            <td>01 Lima</td>
+                            <td>35 San Martín de Porres</td>
+                            <td></td>
+                            <td></td>
+                            <td>M2</td>
+                            <td>F</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="add-button">+ AÑADIR REGISTRO</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="addAddressModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Agregar domicilio</h2>
+            <form id="addAddressForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pais">País:</label>
+                        <select id="pais" required>
+                            <option value="Perú">Perú</option>
+                            <!-- Add more countries as needed -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="departamento">Departamento:</label>
+                        <select id="departamento" required>
+                            <option value="02 Ancash">02 Ancash</option>
+                            <!-- Add more departments as needed -->
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="provincia">Provincia:</label>
+                        <select id="provincia" required>
+                            <option value="02 Aja">02 Aja</option>
+                            <!-- Add more provinces as needed -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="distrito">Distrito:</label>
+                        <select id="distrito" required>
+                            <option value="02 Coris">02 Coris</option>
+                            <!-- Add more districts as needed -->
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tipoVia">Tipo de Vía:</label>
+                        <select id="tipoVia">
+                            <option value="">Seleccionar</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombreVia">Nombre de la Vía:</label>
+                        <input type="text" id="nombreVia">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tipo">Tipo:</label>
+                        <select id="tipo">
+                            <option value="">Seleccionar</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="numeroInmueble">Número de Inmueble:</label>
+                        <input type="text" id="numeroInmueble">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tipoZona">Tipo de Zona:</label>
+                        <select id="tipoZona">
+                            <option value="">Seleccionar</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombreZona">Nombre de la Zona:</label>
+                        <input type="text" id="nombreZona">
+                    </div>
+                </div>
+                <div class="modal-buttons">
+                    <button type="button" id="cancelButton">CANCELAR</button>
+                    <button type="submit">GUARDAR</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

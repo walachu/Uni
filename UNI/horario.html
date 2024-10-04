@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNI EARFIM - Horario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo-container">
+            <a href="index.html"><img src="imagenes/uni-logo.png" alt="UNI EARFIM Logo" class="logo" width="50" height="auto"></a>
+            <div class="logo-text-container">
+                <span class="logo-text">UNI EARPFIM</span>
+                <span class="practicante">DOCENTE</span>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#" onclick="toggleSubMenu()" class="menu-button">
+                <img src="imagenes/maleta.jpg" alt="Briefcase" class="menu-icon">
+                General
+            </a>
+            <div class="submenu" id="submenu">
+                <a href="horario.html">Horario</a>
+                <a href="asistencia.html">Asistencia</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="header">
+            <span class="menu-icon" onclick="toggleSidebar()">≡</span>
+            <span class="user-name">PIMENTEL MONTALVO, GUSTAVO</span>
+            <span class="options-icon" onclick="toggleOptions()">⋮</span>
+            <div class="dropdown" id="dropdown">
+                <a href="#">Mi Información</a>
+                <a href="#">Reiniciar Clave</a>
+                <a href="#">Cerrar Sesión</a>
+            </div>
+        </div>
+
+        <div class="schedule" id="horario">
+            <h2>Horario de clase</h2>
+            <div class="schedule-header">
+                <span><small>Nota: Presione en los cuadros de colores para listar alumnos</small></span>
+                <select>
+                    <option>20222</option>
+                </select>
+                <span class="definitivo">DEFINITIVO</span>
+            </div>
+            <button class="pdf-button">Descargar PDF</button>
+            <table>
+                <tr>
+                    <th>HORA</th>
+                    <th>LUNES</th>
+                    <th>MARTES</th>
+                    <th>MIÉRCOLES</th>
+                    <th>JUEVES</th>
+                    <th>VIERNES</th>
+                    <th>SÁBADO</th>
+                    <th>DOMINGO</th>
+                </tr>
+                <tr>
+                    <td>07-08</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>08-09</td>
+                    <td></td>
+                    <td class="class-box">(12) MC510 C/D /VIRTUAL (IT)</td>
+                    <td></td>
+                    <td class="class-box">(38) BIC011-F /VIRTUAL (IT)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>09-10</td>
+                    <td></td>
+                    <td class="class-box">(12) MC510 C/D /VIRTUAL (IT)</td>
+                    <td class="class-box">(12) MC510 D /VIRTUAL (IT)</td>
+                    <td class="class-box">(38) BIC011-F /VIRTUAL (IT)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10-11</td>
+                    <td></td>
+                    <td class="class-box">(12) MC510 C/D /VIRTUAL (IT)</td>
+                    <td class="class-box">(12) MC510 D /VIRTUAL (IT)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11-12</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12-13</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13-14</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14-15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15-16</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="class-box">(38) ME545-C /VIRTUAL (IT)</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16-17</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="class-box">(38) ME545-C /VIRTUAL (IT)</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17-18</td>
+                    <td></td>
+                    <td></td>
+                    <td class="class-box">(38) ME545-C /VIRTUAL (LT)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>18-19</td>
+                    <td></td>
+                    <td></td>
+                    <td class="class-box">(38) ME545-C /VIRTUAL (LT)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>19-20</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20-21</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>21-22</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>22-23</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <p class="total-hours">CARGA HORARIA: 16 HRS</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

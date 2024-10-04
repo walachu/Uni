@@ -1,0 +1,469 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .sidebar .logo {
+        max-width: 80px; /* Logo más pequeño en pantallas más pequeñas */
+    }
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f1f1f1;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+}
+
+.sidebar.collapsed {
+    left: -250px;
+}
+
+.logo-container {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.logo-text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sidebar .logo {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.practicante {
+    display: block;
+    font-size: 14px;
+    color: #666;
+}
+
+.menu-item {
+    padding: 10px 15px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-button {
+    border: 2px solid transparent;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu-button:hover {
+    border-color: rgba(0, 0, 0, 0.2); /* Línea transparente que aparece al pasar el mouse */
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.menu-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.submenu {
+    display: none;
+    padding-left: 30px;
+}
+
+.submenu.show {
+    display: block;
+}
+
+.submenu a {
+    display: block;
+    padding: 5px 0;
+}
+
+.main {
+    margin-left: 250px;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.main.expanded {
+    margin-left: 0;
+}
+
+.header {
+    background-color: #285c9f;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon, .options-icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.user-name {
+    font-size: 18px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown.show {
+    display: block;
+}
+
+.dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.welcome h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.welcome p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.gears {
+    width: 150px;
+}
+.gear-icon {
+    max-width: 150px;
+}
+
+/* Otros estilos... */
+
+
+.schedule {
+    margin-top: 20px;
+}
+
+.schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.schedule th, .schedule td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.schedule th {
+    background-color: #f2f2f2;
+}
+
+.class-box {
+    background-color: #e6f3ff;
+    padding: 5px;
+}
+
+.pdf-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pdf-button:hover {
+    background-color: #45a049;
+}
+
+.total-hours {
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* ... (estilos anteriores) ... */
+
+/* Estilos para la sección de asistencia */
+.attendance {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.attendance h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.attendance-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.date-picker input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.attendance-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-info {
+    background-color: #2196F3;
+    color: white;
+}
+
+.btn-filter {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.btn-filter.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.attendance-table th, .attendance-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.attendance-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.status-green {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.attendance-summary {
+    margin-top: 20px;
+}
+
+.attendance-summary h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.summary-boxes {
+    display: flex;
+    gap: 10px;
+}
+
+.summary-box {
+    width: 30px;
+    height: 30px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.info-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.info-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.info-header img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+.info-buttons {
+    margin-bottom: 20px;
+}
+.info-buttons button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.info-section {
+    margin-bottom: 20px;
+}
+.info-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+.info-label {
+    width: 150px;
+    font-weight: bold;
+}
+.info-value {
+    flex: 1;
+}
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.info-table th, .info-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.info-table th {
+    background-color: #f2f2f2;
+}
+.add-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .attendance-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .attendance-buttons, .attendance-filters {
+        margin-top: 10px;
+    }
+
+    .attendance-table {
+        font-size: 14px;
+    }
+}
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.form-group {
+    width: 48%;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 5px;
+}
+.modal-buttons {
+    text-align: right;
+    margin-top: 20px;
+}
+.modal-buttons button {
+    padding: 5px 10px;
+    margin-left: 10px;
+}
